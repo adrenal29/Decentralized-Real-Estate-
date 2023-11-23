@@ -21,7 +21,6 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
 
         const buyer = await escrow.buyer(home.id)
         setBuyer(buyer)
-
         const hasBought = await escrow.approval(home.id, buyer)
         setHasBought(hasBought)
 
@@ -109,7 +108,7 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
 
         setHasSold(true)
     }
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
     useEffect(() => {
         fetchDetails()
         fetchOwner()
@@ -181,7 +180,7 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
                     </ul>
                 </div>
 
-
+                <h4>Buyer account is : {buyer}</h4>            
                 <button onClick={togglePop} className="home__close">
                     <img src={close} alt="Close" />
                 </button>
