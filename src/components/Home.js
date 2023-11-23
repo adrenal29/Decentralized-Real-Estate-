@@ -1,4 +1,4 @@
-import { ethers } from 'ethers';
+// import { ethers } from 'ethers';
 import { useEffect, useState } from 'react';
 
 import close from '../assets/close.svg';
@@ -9,7 +9,7 @@ const Home = ({ home, provider, account, escrow, togglePop }) => {
     const [hasInspected, setHasInspected] = useState(false)
     const [hasSold, setHasSold] = useState(false)
 
-    const [buyer, setBuyer] = useState(null)
+    // const [buyer, setBuyer] = useState(null)
     const [lender, setLender] = useState(null)
     const [inspector, setInspector] = useState(null)
     const [seller, setSeller] = useState(null)
